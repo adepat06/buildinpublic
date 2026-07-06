@@ -1,0 +1,348 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap');
+
+/* ==========================
+   GLOBAL
+========================== */
+
+body{
+    background:#F5F7FB;
+    font-family:'Inter',sans-serif;
+    color:#111827;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    max-width:850px;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    background:linear-gradient(135deg,#2563EB,#4F46E5)!important;
+    padding:14px 0;
+    box-shadow:0 8px 25px rgba(37,99,235,.18);
+}
+
+.navbar-brand{
+    font-family:'Poppins',sans-serif;
+    font-size:1.6rem;
+    font-weight:700;
+    letter-spacing:.4px;
+}
+
+/* ==========================
+   HERO CARD
+========================== */
+
+.welcome-card{
+
+    background:linear-gradient(135deg,#2563EB,#4F46E5);
+
+    border-radius:28px;
+
+    color:white;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.welcome-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    right:-70px;
+
+    top:-70px;
+
+}
+
+.welcome-card h2{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.welcome-card p{
+
+    color:rgba(255,255,255,.9);
+
+    font-size:18px;
+
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card{
+
+    border:none;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 35px rgba(15,23,42,.08);
+
+}
+
+.post-card{
+
+    transition:.25s ease;
+
+}
+
+.post-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.12);
+
+}
+
+/* ==========================
+   AVATAR
+========================== */
+
+.avatar{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#2563EB,#4F46E5);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    font-size:22px;
+
+    flex-shrink:0;
+
+}
+
+/* ==========================
+   POST TEXT
+========================== */
+
+.post-content{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#1F2937;
+
+}
+
+/* ==========================
+   COMMENTS
+========================== */
+
+.comment-box{
+
+    background:#F8FAFC;
+
+    border-left:4px solid #2563EB;
+
+    border-radius:14px;
+
+    padding:14px;
+
+    margin-bottom:12px;
+
+    transition:.2s;
+
+}
+
+.comment-box:hover{
+
+    background:#EEF4FF;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+
+    border-radius:14px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.btn-primary{
+
+    background:#2563EB;
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+.btn-success:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.btn-outline-primary:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.btn-outline-danger:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.action-btn{
+
+    min-width:125px;
+
+}
+
+/* ==========================
+   FORMS
+========================== */
+
+textarea,
+input[type=text],
+input[type=password],
+input[type=email]{
+
+    border-radius:16px!important;
+
+    border:1px solid #E5E7EB!important;
+
+    padding:14px!important;
+
+}
+
+textarea:focus,
+input:focus{
+
+    border-color:#2563EB!important;
+
+    box-shadow:0 0 0 .2rem rgba(37,99,235,.15)!important;
+
+}
+
+/* Remove Django labels */
+
+label{
+
+    display:none;
+
+}
+
+/* ==========================
+   SEPARATORS
+========================== */
+
+hr{
+
+    border-color:#E5E7EB;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+
+    margin-top:70px;
+
+    text-align:center;
+
+    color:#6B7280;
+
+    font-size:15px;
+
+    padding-bottom:40px;
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.container{
+
+    padding:20px;
+
+}
+
+.welcome-card h2{
+
+    font-size:1.6rem;
+
+}
+
+.post-content{
+
+    font-size:17px;
+
+}
+
+.avatar{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+.action-btn{
+
+    width:100%;
+
+}
+
+}
