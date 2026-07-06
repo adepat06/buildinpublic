@@ -1,30 +1,89 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-<h1>Login</h1>
+{% block content %}
 
-<form method="POST">
+<div class="row justify-content-center">
 
-    {% csrf_token %}
+    <div class="col-md-6 col-lg-5">
 
-    {{ form.as_p }}
+        <div class="card shadow-lg">
 
-    <button type="submit">
-        Login
-    </button>
+            <div class="card-body p-5">
 
-</form>
+                <div class="text-center mb-4">
 
-<p>
-    Don't have an account?
-    <a href="{% url 'register' %}">
-        Register
-    </a>
-</p>
+                    <h2 class="fw-bold">
 
-</body>
-</html>
+                        👋 Welcome Back
+
+                    </h2>
+
+                    <p class="text-muted">
+
+                        Login to continue building in public.
+
+                    </p>
+
+                </div>
+
+                <form method="POST">
+
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+
+                            Username
+
+                        </label>
+
+                        {{ form.username }}
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <label class="form-label">
+
+                            Password
+
+                        </label>
+
+                        {{ form.password }}
+
+                    </div>
+
+                    <div class="d-grid">
+
+                        <button class="btn btn-primary btn-lg">
+
+                            Login
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <div class="text-center mt-4">
+
+                    Don't have an account?
+
+                    <a href="{% url 'register' %}">
+
+                        Register
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

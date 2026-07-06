@@ -1,28 +1,156 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
 
-<head>
-    <title>Profile</title>
-</head>
+{% block content %}
 
-<body>
+<div class="row justify-content-center">
 
-<h1>Welcome {{ request.user.username }}</h1>
+    <div class="col-lg-8">
 
-<p>
-    <strong>Bio:</strong>
-    {{ profile.bio }}
-</p>
+        <!-- Profile Header -->
 
-<p>
-    <strong>Goal:</strong>
-    {{ profile.goal }}
-</p>
+        <div class="card welcome-card mb-4">
 
-<a href="{% url 'logout' %}">
-    Logout
-</a>
+            <div class="card-body text-center py-5">
 
-</body>
+                <div class="avatar mx-auto mb-3"
+                     style="width:90px;height:90px;font-size:34px;">
 
-</html>
+                    {{ request.user.username|first|upper }}
+
+                </div>
+
+                <h2 class="fw-bold">
+
+                    {{ request.user.username }}
+
+                </h2>
+
+                <p class="mb-0">
+
+                    🚀 Building in Public
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Stats -->
+
+        <div class="row g-3 mb-4">
+
+            <div class="col-md-4">
+
+                <div class="card text-center p-4">
+
+                    <h2 class="text-primary">
+
+                        {{ request.user.post_set.count }}
+
+                    </h2>
+
+                    <p class="mb-0">
+
+                        Posts
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card text-center p-4">
+
+                    <h2 class="text-danger">
+
+                        {{ request.user.liked_posts.count }}
+
+                    </h2>
+
+                    <p class="mb-0">
+
+                        Likes
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card text-center p-4">
+
+                    <h2 class="text-success">
+
+                        {{ request.user.comment_set.count }}
+
+                    </h2>
+
+                    <p class="mb-0">
+
+                        Comments
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bio -->
+
+        <div class="card mb-4">
+
+            <div class="card-body">
+
+                <h4 class="fw-bold">
+
+                    👨‍💻 About
+
+                </h4>
+
+                <hr>
+
+                <p>
+
+                    {{ profile.bio }}
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Goal -->
+
+        <div class="card">
+
+            <div class="card-body">
+
+                <h4 class="fw-bold">
+
+                    🎯 Goal
+
+                </h4>
+
+                <hr>
+
+                <p>
+
+                    {{ profile.goal }}
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

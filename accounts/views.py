@@ -12,6 +12,22 @@ def register(request):
 
         form = UserCreationForm(request.POST)
 
+        # Bootstrap styling
+        form.fields['username'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Choose a username'
+        })
+
+        form.fields['password1'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Create a password'
+        })
+
+        form.fields['password2'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Confirm your password'
+        })
+
         if form.is_valid():
 
             user = form.save()
@@ -23,6 +39,22 @@ def register(request):
     else:
 
         form = UserCreationForm()
+
+        # Bootstrap styling
+        form.fields['username'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Choose a username'
+        })
+
+        form.fields['password1'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Create a password'
+        })
+
+        form.fields['password2'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Confirm your password'
+        })
 
     return render(
         request,
@@ -39,6 +71,17 @@ def login_view(request):
 
         form = AuthenticationForm(data=request.POST)
 
+        # Bootstrap styling
+        form.fields['username'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Username'
+        })
+
+        form.fields['password'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Password'
+        })
+
         if form.is_valid():
 
             user = form.get_user()
@@ -50,6 +93,17 @@ def login_view(request):
     else:
 
         form = AuthenticationForm()
+
+        # Bootstrap styling
+        form.fields['username'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Username'
+        })
+
+        form.fields['password'].widget.attrs.update({
+            'class': 'form-control',
+            'placeholder': 'Password'
+        })
 
     return render(
         request,
