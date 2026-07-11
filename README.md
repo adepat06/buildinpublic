@@ -2,7 +2,7 @@
 
 A full-stack social feed web application built using **Python, Django, Bootstrap, and SQLite**.
 
-**Build in Public** is a platform where developers can document their learning journey by sharing progress updates, interacting with the community through likes and comments, and building consistency while learning. The application features secure authentication, a social feed, and a clean, responsive user interface.
+**Build in Public** is a platform where developers can document their learning journey by sharing progress updates, interacting with the community through likes and comments, and staying accountable while building projects. The application features secure authentication, a social feed, and a clean, responsive user interface.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
 ![Django](https://img.shields.io/badge/Django-4.2-darkgreen?logo=django)
@@ -25,11 +25,11 @@ https://github.com/adepat06/buildinpublic
 ## 📸 Screenshots
 
 | Home Feed | Login |
-|------------|-------|
+|---|---|
 | ![Home Feed](screenshots/homefeed.png) | ![Login](screenshots/login.png) |
 
 | Register | Create Post |
-|------------|-------------|
+|---|---|
 | ![Register](screenshots/register.png) | ![Create Post](screenshots/post%20%5D.png) |
 
 ---
@@ -171,7 +171,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-### 9. Open in Your Browser
+### 9. Open Your Browser
 
 ```
 http://127.0.0.1:8000/
@@ -253,13 +253,13 @@ http://127.0.0.1:8000/
 **Adelin Patricia A**
 
 - GitHub: https://github.com/adepat06
-- LinkedIn: https://www.linkedin.com/in/adelin-patricia-a/
+- LinkedIn: https://www.linkedin.com/in/adelin-patricia/
 
 ---
 
 ## ⭐ Support
 
-If you found this project useful, consider giving it a **⭐ Star** on GitHub.
+If you found this project useful, consider giving it a ⭐ on GitHub.
 
 It helps others discover the project and supports future development.
 
