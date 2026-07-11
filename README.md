@@ -2,7 +2,7 @@
 
 A full-stack social feed web application built using **Python, Django, Bootstrap, and SQLite**.
 
-**Build in Public** is a platform where developers can document their learning journey by sharing progress updates, engaging with the community through likes and comments, and staying accountable while building projects. The application provides secure authentication, user profiles, and a clean, responsive interface.
+**Build in Public** is a platform where developers can document their learning journey by sharing progress updates, interacting with the community through likes and comments, and building consistency while learning. The application features secure authentication, a social feed, and a clean, responsive user interface.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
 ![Django](https://img.shields.io/badge/Django-4.2-darkgreen?logo=django)
@@ -14,58 +14,51 @@ A full-stack social feed web application built using **Python, Django, Bootstrap
 
 ## 🚀 Live Demo
 
-🌐 **Live Website:**
-
+🌐 **Live Website:**  
 https://buildinpublic-jfn0.onrender.com
 
-📂 **GitHub Repository:**
-
+📂 **GitHub Repository:**  
 https://github.com/adepat06/buildinpublic
 
 ---
 
 ## 📸 Screenshots
 
-| Home Feed | Login | Register |
-|------------|---------|-----------|
-| ![Home Feed](screenshots/home_feed.png) | ![Login](screenshots/login.png) | ![Register](screenshots/register.png) |
+| Home Feed | Login |
+|------------|-------|
+| ![Home Feed](screenshots/homefeed.png) | ![Login](screenshots/login.png) |
 
-| Comments | Create Post | Profile |
-|------------|-------------|----------|
-| ![Comments](screenshots/comments.png) | ![Create Post](screenshots/create_post.png) | ![Profile](screenshots/profile.png) |
+| Register | Create Post |
+|------------|-------------|
+| ![Register](screenshots/register.png) | ![Create Post](screenshots/post%20%5D.png) |
 
 ---
 
 ## ✨ Features
 
 ### 👤 User Authentication
-
 - User Registration
 - User Login
 - User Logout
 - Secure Password Authentication
 
 ### 📝 Social Feed
-
 - Create Progress Updates
-- View a Chronological Feed
+- View Posts in a Chronological Feed
 - Delete Your Own Posts
 - Share Your Learning Journey
 
 ### ❤️ Community Interaction
-
 - Like & Unlike Posts
 - Comment on Posts
 - Engage with Other Users
 
 ### 👤 User Profiles
-
-- Personalized Profile Page
-- Display Learning Goals
+- Personal Profile Page
 - User Bio
+- Learning Goals
 
 ### 🎨 User Interface
-
 - Responsive Design
 - Bootstrap 5 Styling
 - Mobile-Friendly Layout
@@ -79,9 +72,9 @@ https://github.com/adepat06/buildinpublic
 - Secure authentication system
 - CRUD operations for posts
 - Like & comment functionality
-- Responsive Bootstrap interface
-- Cloud deployment on Render
-- Production-ready static file handling using WhiteNoise
+- Responsive Bootstrap UI
+- Cloud deployment using Render
+- Static file handling with WhiteNoise
 
 ---
 
@@ -178,7 +171,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-### 9. Open Your Browser
+### 9. Open in Your Browser
 
 ```
 http://127.0.0.1:8000/
@@ -189,15 +182,14 @@ http://127.0.0.1:8000/
 ## 🧠 What I Learned
 
 - Django Project Structure
-- User Authentication & Authorization
+- User Authentication
 - Django ORM
 - CRUD Operations
 - Database Relationships
+- Session Management
 - URL Routing
 - Template Rendering
-- Session Management
 - Bootstrap Integration
-- Static File Management
 - WhiteNoise Configuration
 - Deployment Using Render
 - Git & GitHub Workflow
@@ -260,9 +252,8 @@ http://127.0.0.1:8000/
 
 **Adelin Patricia A**
 
-GitHub: https://github.com/adepat06
-
-LinkedIn: https://www.linkedin.com/in/adelin-patricia-a/
+- GitHub: https://github.com/adepat06
+- LinkedIn: https://www.linkedin.com/in/adelin-patricia-a/
 
 ---
 
